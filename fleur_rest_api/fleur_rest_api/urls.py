@@ -1,5 +1,5 @@
 """
-URL configuration for fleur_api project.
+URL configuration for fleur_rest_api project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -19,6 +19,6 @@ from django.urls import path
 from django.conf.urls import include
 
 urlpatterns = [
-    path('', include('plants_api.urls')),
+    path('', include('fleur_api.urls')),
     path('admin/', admin.site.urls),
 ]

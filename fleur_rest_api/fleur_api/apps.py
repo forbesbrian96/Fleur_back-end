@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class PlantsApiConfig(AppConfig):
+class FleurApiConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'plants_api'
+    name = 'fleur_api'
