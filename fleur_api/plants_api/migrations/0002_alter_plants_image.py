@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterField(
-            model_name='plants',
+            model_name='plant',
             name='image',
             field=models.CharField(max_length=500),
         ),
