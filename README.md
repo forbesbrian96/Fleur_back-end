@@ -2,3 +2,4 @@
 Django/PSQL repo for Fleur's back-end
 
 kayisha
+kaity hayes 
