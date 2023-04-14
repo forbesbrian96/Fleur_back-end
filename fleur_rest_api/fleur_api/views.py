@@ -16,13 +16,13 @@ class PlantDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Plant.objects.all().order_by('id')
     serializer_class = PlantSerializer
 
-    def get(self, request, *args, **kwargs):
-        plants = self.get_queryset()
-        for plant in plants:
-            rating = Rating.objects.filter(plant=plant, user=request.user).first()
-            plant.user_rating = rating.rating if rating else 0
-        serializer = PlantSerializer(plants, many=True)
-        return Response(serializer.data)
+    # def get(self, request, *args, **kwargs):
+    #     plants = self.get_queryset()
+    #     for plant in plants:
+    #         rating = Rating.objects.filter(plant=plant, user=request.user).first()
+    #         plant.user_rating = rating.rating if rating else 0
+    #     serializer = PlantSerializer(plants, many=True)
+    #     return Response(serializer.data)
 
 
 def rate(request, plant_id: int, rating: int) -> HttpResponse:
