@@ -22,11 +22,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-no_ilby5n*(htj%r&v)16zb1-#p#v)y5wbc=!_0*+9ou!fl)$q'
+SECRET_KEY = 'django-insecure-&*h%zfi)&bwp-w%ui3baq$cbq*vptvw=ult#cg1pgnb5dx_&6l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ['localhost', 'secure-journey-08415.herokuapp.com/']
 
@@ -34,9 +33,6 @@ ALLOWED_HOSTS = ['localhost', 'secure-journey-08415.herokuapp.com/']
 # Application definition
 
 INSTALLED_APPS = [
-    'corsheaders',
-    'rest_framework',
-    'fleur_api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
