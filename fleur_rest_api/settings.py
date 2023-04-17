@@ -33,6 +33,9 @@ ALLOWED_HOSTS = ['localhost', 'secure-journey-08415.herokuapp.com/']
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
+    'rest_framework',
+    'fleur_api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

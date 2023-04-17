@@ -8,5 +8,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/plants', views.PlantList.as_view(), name='plant_list'), 
     path('api/plants/<int:pk>', views.PlantDetail.as_view(), name='plant_detail'), 
-    path('rate/<int:plant_id>/<int:rating>/', views.rate),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    # path('rate/<int:plant_id>/<int:rating>/', views.rate),
+]
