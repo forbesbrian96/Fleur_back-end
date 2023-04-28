@@ -1,1 +1,1 @@
-web: gunicorn fleur_back-end.wsgi
+web: gunicorn fleur_rest_api.wsgi

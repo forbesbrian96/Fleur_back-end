@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'fleur_back-end.wsgi.application'
+WSGI_APPLICATION = 'fleur_rest_api.wsgi.application'
 
 
 # Database
